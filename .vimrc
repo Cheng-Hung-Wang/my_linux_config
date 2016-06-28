@@ -79,7 +79,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'davidhalter/jedi-vim'
 
