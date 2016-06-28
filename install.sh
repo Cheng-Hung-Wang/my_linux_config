@@ -43,8 +43,12 @@ cd vim-*  # it will be vim-7.4.something
 dpkg-buildpackage -us -uc
 cd ..
 sudo dpkg -i vim-gnome_*_amd64.deb vim-common_*_amd64.deb vim-gui-common_*_all.deb vim-runtime_*_all.deb
-rm -rf vim*
-vim --version | grep python
+
+var=`vim --version | grep "+python3"`
+if [[ ! -v "$var" ]]; then
+	echo $var
+	rm -rf vim*
+fi
 #==================================================================================================
 
 # install vim plugin
