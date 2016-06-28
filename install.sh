@@ -27,7 +27,9 @@ sudo aptitude install mysql-server-5.5 mysql-client-5.5 mysql-server-core-5.5 ph
 # install vim for python3(Before 16.04)
 # reference: http://askubuntu.com/questions/585237/whats-the-easiest-way-to-get-vim-with-python-3-support
 #=============================================================================
-sudo apt-get build-dep vim
+sudo apt-add-repository ppa:pi-rho/dev
+sudo apt-get update
+sudo apt-get build-dep vim -y
 apt-get source vim
 cd vim-*  # it will be vim-7.4.something
 
