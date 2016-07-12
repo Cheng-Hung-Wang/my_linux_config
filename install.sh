@@ -27,6 +27,11 @@ sudo aptitude install mysql-server-5.5 mysql-client-5.5 mysql-server-core-5.5 ph
 # install vim for python3(Before 16.04)
 # reference: http://askubuntu.com/questions/585237/whats-the-easiest-way-to-get-vim-with-python-3-support
 #=============================================================================
+# for ubuntu 16.04=xenial 14.04=trusty
+sudo vim /etc/apt/sources.list
+# add two line (deb, deb-src)
+#deb http://ppa.launchpad.net/pi-rho/dev/ubuntu xenial main 
+#deb-src http://ppa.launchpad.net/pi-rho/dev/ubuntu xenial main 
 sudo apt-add-repository ppa:pi-rho/dev
 sudo apt-get update
 sudo apt-get build-dep vim -y
