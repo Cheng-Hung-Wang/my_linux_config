@@ -47,6 +47,7 @@ cd vim-*  # it will be vim-7.4.something
 
 sudo dpkg-buildpackage -us -uc
 cd ..
+sudo aptitude purge vim
 sudo dpkg -i vim-gnome_*_amd64.deb vim-common_*_amd64.deb vim-gui-common_*_all.deb vim-runtime_*_all.deb
 
 var=`vim --version | grep "+python3"`
