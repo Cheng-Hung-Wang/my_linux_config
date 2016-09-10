@@ -1,6 +1,6 @@
 
 
-sudo apg-get install aptitude
+sudo apt-get install aptitude
 sudo apt-get update
 
 sudo aptitude pure firefox
@@ -45,7 +45,7 @@ cd vim-*  # it will be vim-7.4.something
 #ALLINTERPFLAGS+=--enable-pythoninterp=dynamic --with-python-config-dir=$(shell python-config --configdir)
 #ALLINTERPFLAGS+=--enable-python3interp=dynamic --with-python3-config-dir=$(shell python3-config --configdir)
 
-dpkg-buildpackage -us -uc
+sudo dpkg-buildpackage -us -uc
 cd ..
 sudo dpkg -i vim-gnome_*_amd64.deb vim-common_*_amd64.deb vim-gui-common_*_all.deb vim-runtime_*_all.deb
 
